@@ -1,2 +1,3 @@
-def edit_contact():
-    pass
+def edit_contact(contact):
+    import os
+    pass 

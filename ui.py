@@ -1,4 +1,4 @@
-def data_storage():
+def data_storage_menu():
     from add_new_contact import new_contact
     from edit_existing_contact import edit_contact
     from delete_contact import delete_contact
@@ -6,11 +6,13 @@ def data_storage():
     from display_contacts import display_contacts
     from export_contacts import export_contacts
     from import_contacts import import_contacts
+    from main import contact_list
     import os
     while True:
         os.system("cls")
+        print(contact_list)
         user_input = input(
-            """
+"""
 Welcome to the contact management system!
 Menu:
 1. Add a new contact
@@ -21,17 +23,17 @@ Menu:
 6. Export contacts to a text file
 7. Import contacts from a text file
 8. Quit 
-              """)
+""")
         if user_input == "1":
-            new_contact()
+            new_contact(contact_list)
         elif user_input == "2":
-            edit_contact()
+            edit_contact(contact_list)
         elif user_input == "3":
             delete_contact()
         elif user_input == "4":
             contact_search()
         elif user_input == "5":
-            display_contacts()
+            display_contacts(contact_list)
         elif user_input == "6":
             export_contacts()
         elif user_input == "7":
