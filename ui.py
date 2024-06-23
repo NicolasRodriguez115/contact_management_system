@@ -34,7 +34,7 @@ Menu:
         elif user_input == "5":
             display_contacts(contact_list)
         elif user_input == "6":
-            export_contacts()
+            export_contacts(contact_list)
         elif user_input == "7":
             import_contacts()
         elif user_input == "8":
