@@ -10,7 +10,6 @@ def data_storage_menu():
     import os
     while True:
         os.system("cls")
-        print(contact_list)
         user_input = input(
 """
 Welcome to the contact management system!
@@ -31,7 +30,7 @@ Menu:
         elif user_input == "3":
             delete_contact(contact_list)
         elif user_input == "4":
-            contact_search()
+            contact_search(contact_list)
         elif user_input == "5":
             display_contacts(contact_list)
         elif user_input == "6":
