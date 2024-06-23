@@ -29,7 +29,7 @@ Menu:
         elif user_input == "2":
             edit_contact(contact_list)
         elif user_input == "3":
-            delete_contact()
+            delete_contact(contact_list)
         elif user_input == "4":
             contact_search()
         elif user_input == "5":

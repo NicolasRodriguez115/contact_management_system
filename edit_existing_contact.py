@@ -5,7 +5,7 @@ def edit_contact(contact):
         print(f"Phone number: {id}")
         for description, value in info.items():
             print(f"{description} {value}")
-    phone_searched = input("Enter the phone number that you wanna search:\n")
+    phone_searched = input("Enter the phone number of the contact you want to edit:\n")
     phone_selected = contact.get(phone_searched, False)
     if phone_selected:
         while True:
