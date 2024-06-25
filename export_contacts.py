@@ -8,5 +8,3 @@ def export_contacts(contacts):
         file.write(f"{id},{name},{email}\n")
     input(f"The list of contacts was succesfully exported to contact_list.txt! Press 'enter' to continue,\n ")
     return       
-
-# Add this function to your menu options.
